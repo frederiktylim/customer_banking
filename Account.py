@@ -2,7 +2,10 @@
 
 class Account:
     """Creating an Account class with methods"""
-    def __init__(self, balance, interest):
+    #init a class constructor
+    #self is telling the class that it is calling one of its own variables;
+    #needed for all variables in a class
+    def __init__(self, balance=0, interest=0):
         self.balance = balance
         self.interest = interest
 
@@ -13,5 +16,5 @@ class Account:
 
     # The method sets the interest gained for the account.
     def set_interest(self, interest):
-        """Sets the interest gained for the the account"""
+        """Sets the interest gained for the account"""
         self.interest = interest
